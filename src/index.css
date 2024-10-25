@@ -1,0 +1,135 @@
+.searchBar{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+}
+
+.searchBar input{
+  width: 400px;
+  padding:9px;
+  font-size: 22px;
+  border: none;
+  border-color: #e7e7e7;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+
+.searchBar button{
+  width: 99px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.MealImg {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 15px;
+  width: 200px; /* Fixed width */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Animation for scaling */
+  text-align: center; /* Center align text */
+  padding-bottom: 5px;
+}
+
+.MealImg:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.MealImg img {
+  width: 100%; /* Make image responsive */
+  border-bottom: 1px solid #dee2e6; /* Border between image and text */
+}
+
+.MealImg p {
+  font-size: 1.1em; /* Increase font size */
+  padding: 10px; /* Add some padding */
+  color: #333; /* Darker text color */
+}
+
+.MealImg button {
+  background-color:orange; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 15px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.MealImg button:hover {
+  background-color:orange; /* Darker on hover */
+}
+
+.meal-info {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%; 
+}
+
+.meal-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+  .meal-details {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .meal-details img {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .info {
+    width: 50%;
+    text-align: left;
+  }
+}
